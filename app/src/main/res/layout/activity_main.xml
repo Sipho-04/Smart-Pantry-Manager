@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Smart Pantry Manager"
+        android:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart Pantry Manager"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage your pantry easily"
+                android:textSize="16sp"
+                android:layout_marginBottom="40dp" />
+
+            <Button
+                android:id="@+id/btnViewPantry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Pantry Items"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Pantry Item"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnLowStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low Stock Items"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnExpiryItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiry Items"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnAlerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alerts"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnSearchPantry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Pantry"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings" />
+
+            <Button
+                android:id="@+id/btnSuggestedRecipes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suggested Recipes"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnRecipeCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipe Collection"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
